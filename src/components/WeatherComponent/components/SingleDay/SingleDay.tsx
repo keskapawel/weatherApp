@@ -10,7 +10,6 @@ interface IProps {
 }
 
 export const SingleDay = ({ singleDay }: IProps) => {
-  console.log(singleDay, 'singleDay');
   return (
     <S.Wrapper>
       <S.Day>{getShortDayName(singleDay?.datetime ?? '')}</S.Day>
